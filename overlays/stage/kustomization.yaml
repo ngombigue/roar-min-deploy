@@ -16,7 +16,7 @@ resources:
 configMapGenerator:
 - name: mysql-db-configmap
   literals:
-  - mysql.database=registry_test
+  - mysql.database=registry
 
 
 
