@@ -7,8 +7,6 @@ resources:
 # Change the image name and version
 images:
 - name: localhost:5000/roar-db
-  newName: bclaster/roar-db
-  newTag: test
-
- 
-
+  newTag: 0.0.48
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
