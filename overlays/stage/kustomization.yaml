@@ -11,12 +11,6 @@ resources:
 - ./web
 - namespace.yaml
 
-# Generate a configmap of database info
-
-configMapGenerator:
-- name: mysql-db-configmap
-  literals:
-  - mysql.database=registry
 
 
 
