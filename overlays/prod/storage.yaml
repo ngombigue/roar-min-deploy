@@ -5,8 +5,9 @@ metadata:
   name: mysql-pv
   labels:
     type: local
+    variant: prod
 spec:
-  storageClassName: manual
+  storageClassName: ""
   capacity:
     storage: 100M
   accessModes:
@@ -19,9 +20,10 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     app: mysql
+    variant: prod
   name: mysql-pv-claim
 spec:
-  storageClassName: manual
+  storageClassName: ""
   accessModes:
   - ReadWriteOnce
   resources:
