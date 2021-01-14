@@ -8,7 +8,7 @@ namespace: roar-prod
 # and emits as a YAML string
 resources:
 - ./db
-- ../../base/web
+- ./web
 - namespace.yaml
 - storage.yaml
 
