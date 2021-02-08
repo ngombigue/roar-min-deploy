@@ -10,7 +10,7 @@ resources:
 - ./db
 - ./web
 - namespace.yaml
-- storage.yaml
+
 
 
               
