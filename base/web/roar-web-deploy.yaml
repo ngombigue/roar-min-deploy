@@ -17,7 +17,7 @@ spec:
       containers:
       - name: roar-web
         image: roar-web
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
           name: web
