@@ -1,10 +1,10 @@
-
-  resources:
+resources:
 - ../../../base/db
 
 images:
 - name: roar-db
-  newTag: 0.0.56
+  newTag: 1.0.56  # même que staging, image stable validée
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+

@@ -1,10 +1,10 @@
-
 resources:
 - ../../../base/web
 
 images:
 - name: roar-web
-  newTag: latest   # ou remplace par un vrai tag local si tu as tagué différemment
+  newTag: 1.0.56  # ou une version spécifique que tu veux promouvoir
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+
