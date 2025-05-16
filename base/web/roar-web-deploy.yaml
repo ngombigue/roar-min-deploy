@@ -6,16 +6,19 @@ metadata:
   name: roar-web
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: roar-web
   template:
     metadata:
       labels:
         app: roar-web
     spec:
       containers:
-      - image: image: roar-web
-
+      - name: roar-web
+        image: roar-web
         imagePullPolicy: Always
-        name: roar-web
         ports:
         - containerPort: 8080
           name: web
+
