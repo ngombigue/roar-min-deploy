@@ -1,11 +1,10 @@
 
-# List of resource files that kustomize reads, modifies
-# and emits as a YAML string
 resources:
 - ../../../base/web
 
+images:
+- name: roar-web
+  newTag: latest   # ou remplace par un vrai tag local si tu as tagué différemment
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-- name: localhost:5000/roar-web
-  newTag: 1.0.56
